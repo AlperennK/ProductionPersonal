@@ -28,6 +28,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+#Testing master
 production:
   <<: *default
   database: alperen_koksel_production
