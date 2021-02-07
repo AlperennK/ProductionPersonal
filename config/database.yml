@@ -30,4 +30,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: alperen_koksel_production
+  username: deploy
+  password: Rails.application.credentials.dig(:production, :db_password)
